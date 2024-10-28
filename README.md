@@ -2,6 +2,10 @@
 
 RabbitMQ Exchange Tiplerinin çalışma stilini anlamak için sırasıyla yapılan işlemleri gerçekleştiriniz.
 
+** docker ile rabbitmq oluşturmak için;
+
+docker run -d --hostname tag-rabbitmq --name rabbitmq -p 15672:15672 rabbitmq:3-management
+
 1- -producer projelerinde terminalden "docker compose up" komutu ile ilgili image oluşturulur. 
 2- Ardından -consumer projeleri ayağa kaldırılır.
 
